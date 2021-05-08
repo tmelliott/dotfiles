@@ -19,7 +19,7 @@ test -f $HOME/.aliases.sh && source $HOME/.aliases.sh
 test -f $HOME/.paths.sh && source $HOME/.paths.sh
 
 
-# export NVM_DIR="/home/emperor/.nvm"
+# export NVM_DIR="/home/tom/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
