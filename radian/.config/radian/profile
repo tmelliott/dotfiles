@@ -1,0 +1,23 @@
+# Find the .Rprofile for the current project (this may be in a parent directory)
+# and source it. This is useful for setting up project-specific options.
+# Manual search required
+
+current_dir <- getwd()
+while (current_dir != "/") {
+    rprofile <- file.path(current_dir, ".Rprofile")
+    if (file.exists(rprofile)) {
+        cat(">>> using config in", rprofile, "\n")
+        source(rprofile)
+        Sys.setenv(PROJECT_ROOT_DIR = current_dir)
+
+        # Set the library path to the project's .lib directory if it exists
+        if (dir.exists(file.path(current_dir, ".lib"))) {
+            cat(">>> using library in ", file.path(current_dir, ".lib"), "\n")
+            .libPaths(file.path(current_dir, ".lib"))
+        }
+
+        cat("\n")
+        break
+    }
+    current_dir <- dirname(current_dir)
+}

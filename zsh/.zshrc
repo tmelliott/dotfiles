@@ -1,7 +1,5 @@
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
-export PATH="$HOME/bin:$PATH"
-
 if [ ! -d "$ZINIT_HOME" ]; then
   mkdir -p "$(dirname $ZINIT_HOME)"
     git clone https://github.com/zdharma/zinit.git "$ZINIT_HOME"
@@ -20,6 +18,16 @@ zinit snippet OMZP::sudo
 autoload -U compinit && compinit
 
 zinit cdreplay -q
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
 
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
 
@@ -53,3 +61,5 @@ esac
 # pnpm end
 
 nerdfetch
+
+if [ -e /home/tom/.nix-profile/etc/profile.d/nix.sh ]; then . /home/tom/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
