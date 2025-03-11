@@ -1,0 +1,18 @@
+{
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    //"all-outputs": true,
+    "warp-on-scroll": false,
+    "format": "{icon}",
+    "format-icons": {
+      "urgent": "",
+      "active": "",
+      "default": ""
+    },
+    "persistent-workspaces": {
+      "DP-6": [1, 2],
+      "DP-7": [3, 9],
+      "eDP-1": [4]
+    }
+  }
+}

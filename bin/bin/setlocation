@@ -1,0 +1,44 @@
+#!/bin/sh
+
+# list all dirs in the ~/.config/hypr/locations directory
+
+# get the list of files, and extract the matching part
+choices=$(ls ~/.config/hypr/locations)
+
+# can pass a file as an argument, check if its valid
+if [ -n "$1" ]; then
+    if echo "$choices" | grep -q "^$1$"; then
+        rm -f ~/.config/hypr/current
+        ln -s ~/.config/hypr/locations/$1 ~/.config/hypr/current
+
+        rm -f ~/.config/waybar/current
+        ln -s ~/.config/waybar/locations/$1 ~/.config/waybar/current
+
+        hyprctl reload
+	pkill waybar && hyprctl dispatch exec waybar
+	exit
+    else
+        echo "Invalid option: $1"
+        echo "Valid options are:"
+        echo "$choices"
+        exit 1
+    fi
+fi
+
+# prompt the user to select an option
+echo "Please select a location configuration:"
+select choice in $choices; do
+    if [ -n "$choice" ]; then
+        break
+    fi
+done
+
+
+rm -f ~/.config/hypr/current
+ln -s ~/.config/hypr/locations/$choice ~/.config/hypr/current
+
+rm -f ~/.config/waybar/current
+ln -s ~/.config/waybar/locations/$choice ~/.config/waybar/current
+
+hyprctl reload
+pkill waybar && hyprctl dispatch exec waybar
