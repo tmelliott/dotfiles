@@ -6,25 +6,28 @@
   // "width": 1280, // Waybar width
   "spacing": 4, // Gaps between modules (4px)
   // Choose the order of the modules
-  "modules-left": ["hyprland/workspaces"],
+  "modules-left": [
+    // "tray",
+    "hyprland/workspaces"
+  ],
   "modules-center": ["hyprland/window"],
   "modules-right": [
-    "mpd",
-    "idle_inhibitor",
+    // "mpd",
+    // "idle_inhibitor",
     "pulseaudio",
     "network",
-    "power-profiles-daemon",
-    "cpu",
-    "memory",
-    "temperature",
-    "backlight",
-    "keyboard-state",
-    "sway/language",
+    // "power-profiles-daemon",
+    // "cpu",
+    // "memory",
+    // "temperature",
+    // "backlight",
+    // "keyboard-state",
+    // "sway/language",
     "battery",
-    "battery#bat2",
-    "clock",
-    "tray",
-    "custom/power"
+    // "battery#bat2",
+    "clock"
+    // "tray",
+    // "custom/power"
   ],
   // Modules configuration
   "include": ["~/.config/waybar/current/workspaces.jsonc"],
@@ -47,32 +50,32 @@
     "tooltip": true,
     "tooltip-format": "{app}: {title}"
   },
-  "mpd": {
-    "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
-    "format-disconnected": "Disconnected ",
-    "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
-    "unknown-tag": "N/A",
-    "interval": 5,
-    "consume-icons": {
-      "on": " "
-    },
-    "random-icons": {
-      "off": "<span color=\"#f53c3c\"></span> ",
-      "on": " "
-    },
-    "repeat-icons": {
-      "on": " "
-    },
-    "single-icons": {
-      "on": "1 "
-    },
-    "state-icons": {
-      "paused": "",
-      "playing": ""
-    },
-    "tooltip-format": "MPD (connected)",
-    "tooltip-format-disconnected": "MPD (disconnected)"
-  },
+  // "mpd": {
+  //   "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
+  //   "format-disconnected": "Disconnected ",
+  //   "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
+  //   "unknown-tag": "N/A",
+  //   "interval": 5,
+  //   "consume-icons": {
+  //     "on": " "
+  //   },
+  //   "random-icons": {
+  //     "off": "<span color=\"#f53c3c\"></span> ",
+  //     "on": " "
+  //   },
+  //   "repeat-icons": {
+  //     "on": " "
+  //   },
+  //   "single-icons": {
+  //     "on": "1 "
+  //   },
+  //   "state-icons": {
+  //     "paused": "",
+  //     "playing": ""
+  //   },
+  //   "tooltip-format": "MPD (connected)",
+  //   "tooltip-format-disconnected": "MPD (disconnected)"
+  // },
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
@@ -82,7 +85,7 @@
   },
   "tray": {
     // "icon-size": 21,
-    "spacing": 10
+    "spacing": 12
   },
   "clock": {
     // "timezone": "America/New_York",

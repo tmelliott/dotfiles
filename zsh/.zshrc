@@ -60,6 +60,8 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+export HYPRSHOT_DIR="$HOME/Pictures/Screenshots"
+
 nerdfetch
 
 if [ -e /home/tom/.nix-profile/etc/profile.d/nix.sh ]; then . /home/tom/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
