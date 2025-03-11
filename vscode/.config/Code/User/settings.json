@@ -28,7 +28,6 @@
   "latex-workshop.latex.autoBuild.run": "onSave",
   "editor.fontFamily": "'FiraCode Nerd Font', 'monospace', monospace",
   "editor.fontLigatures": true,
-  "r.plot.useHttpgd": true,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -82,6 +81,7 @@
   "github.copilot.editor.enableAutoCompletions": true,
   "makefile.configureOnOpen": false,
   "github.copilot.nextEditSuggestions.enabled": true,
-  "workbench.colorTheme": "Catppuccin Frappé",
-  "workbench.iconTheme": "catppuccin-frappe"
+  "workbench.iconTheme": "catppuccin-macchiato",
+  "workbench.colorTheme": "Catppuccin Macchiato",
+  "r.plot.useHttpgd": true
 }

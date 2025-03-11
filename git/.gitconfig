@@ -1,3 +1,5 @@
 [user]
 	email = tom@inzight.co.nz
 	name = Tom Elliott
+[credential]
+	helper = cache
