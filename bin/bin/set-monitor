@@ -1,0 +1,30 @@
+#!/bin/sh
+
+
+# list all files in the ~/.config/hypr directory that match 'monitors-*.conf',
+# and let user choose one of the options (based on the value of *)
+
+# get the list of files, and extract the matching part
+files=$(ls ~/.config/hypr/monitors-*.conf | sed 's/.*\/monitors-//; s/\.conf//')
+
+# can pass a file as an argument, check if its valid
+if [ -n "$1" ]; then
+    if echo "$files" | grep -q "^$1$"; then
+        ln -sf ~/.config/hypr/monitors-$1.conf ~/.config/hypr/monitors.conf
+        exit
+    else
+        echo "Invalid file: $1"
+        exit 1
+    fi
+fi
+
+# prompt the user to select a file
+echo "Please select a monitor configuration:"
+select file in $files; do
+    if [ -n "$file" ]; then
+        break
+    fi
+done
+
+# link the selected file to ~/.config/hypr/monitors.conf
+ln -sf ~/.config/hypr/monitors-$file.conf ~/.config/hypr/monitors.conf
