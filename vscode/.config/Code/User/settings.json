@@ -81,7 +81,7 @@
   "github.copilot.editor.enableAutoCompletions": true,
   "makefile.configureOnOpen": false,
   "github.copilot.nextEditSuggestions.enabled": true,
-  "workbench.iconTheme": "catppuccin-macchiato",
-  "workbench.colorTheme": "Catppuccin Macchiato",
+  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.colorTheme": "Catppuccin Mocha",
   "r.plot.useHttpgd": true
 }

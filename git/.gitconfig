@@ -3,3 +3,5 @@
 	name = Tom Elliott
 [credential]
 	helper = cache
+[init]
+	defaultBranch = main
