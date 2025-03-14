@@ -10,8 +10,8 @@
       "default": ""
     },
     "persistent-workspaces": {
-      "DP-6": [1, 2],
-      "DP-7": [3, 9],
+      "desc:ViewSonic Corporation VX2758-SERIES VVF212020342": [1, 2],
+      "desc:ViewSonic Corporation VX2758-SERIES VVF212320117": [3, 9],
       "eDP-1": [4]
     }
   }
