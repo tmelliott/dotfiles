@@ -1,0 +1,9 @@
+#!/bin/sh
+
+CURRENT_MODE=$(gsettings get org.gnome.desktop.interface color-scheme)
+
+gsettings set org.gnome.desktop.interface color-scheme \
+    $(if [ "$CURRENT_MODE" = "'prefer-dark'" ]; \
+        then echo "'prefer-light'"; \
+        else echo "'prefer-dark'"; \
+    fi)
