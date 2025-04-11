@@ -61,6 +61,7 @@ esac
 # pnpm end
 
 export HYPRSHOT_DIR="$HOME/Pictures/Screenshots"
+export XTERM=xterm-256color
 
 nerdfetch
 

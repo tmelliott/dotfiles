@@ -1,7 +1,9 @@
 [user]
-	email = tom@inzight.co.nz
+	email = tomelliottnz@gmail.com
 	name = Tom Elliott
 [credential]
 	helper = cache
 [init]
 	defaultBranch = main
+[core]
+	editor = vim
