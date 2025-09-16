@@ -71,7 +71,7 @@
   "editor.lineHeight": 1.8,
   "git.confirmSync": false,
   "window.zoomLevel": 1,
-  "editor.rulers": [80],
+  // "editor.rulers": [80],
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode"
   },
@@ -81,11 +81,12 @@
   "github.copilot.editor.enableAutoCompletions": true,
   "makefile.configureOnOpen": false,
   "github.copilot.nextEditSuggestions.enabled": true,
-  "workbench.iconTheme": "catppuccin-macchiato",
+  "workbench.iconTheme": "catppuccin-latte",
   "r.plot.useHttpgd": true,
   // "workbench.colorTheme": "Catppuccin Frappé",
   "window.autoDetectColorScheme": true,
   "workbench.preferredDarkColorTheme": "Catppuccin Macchiato",
   "workbench.preferredLightColorTheme": "Catppuccin Latte",
-  "typescript.tsserver.log": "verbose"
+  "typescript.tsserver.log": "verbose",
+  "workbench.sideBar.location": "right"
 }
