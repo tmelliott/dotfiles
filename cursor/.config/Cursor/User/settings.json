@@ -1,0 +1,97 @@
+{
+  "window.commandCenter": true,
+  "cursor.cpp.disabledLanguages": ["scminput"],
+  "workbench.editor.enablePreview": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "explorer.confirmDragAndDrop": false,
+  "files.associations": {
+    "*.embeddedhtml": "html",
+    "*.rmd": "markdown",
+    "*.Rmd": "rmarkdown"
+  },
+  "languageTool.language": "en-NZ",
+  "languageToolLinter.languageTool.language": "en-NZ",
+  "liveServer.settings.donotVerifyTags": true,
+  "emmet.excludeLanguages": ["markdown", "php"],
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "[css]": {
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "r.lsp.diagnostics": false,
+  "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "editor.fontFamily": "'FiraCode Nerd Font', 'monospace', monospace",
+  "editor.fontLigatures": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.startupEditor": "none",
+  "editor.formatOnSave": true,
+  "r.bracketedPaste": true,
+  "r.rterm.linux": "/home/tom/.local/bin/radian",
+  "r.rterm.option": [
+    "--no-save",
+    "--no-restore",
+    "--r-binary=/usr/local/bin/R"
+  ],
+  "r.alwaysUseActiveTerminal": true,
+  "latex-workshop.view.pdf.viewer": "tab",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[r]": {
+    "editor.defaultFormatter": "REditorSupport.r"
+  },
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false,
+    "yaml": true
+  },
+  "php.suggest.basic": false,
+  "php.validate.enable": false,
+  "git.ignoreMissingGitWarning": true,
+  "git.autofetch": true,
+  "nsis.compiler.pathToMakensis": "C:\\Program Files (x86)\\NSIS\\Bin\\makensis",
+  "githubPullRequests.pullBranch": "never",
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "editor.lineHeight": 1.8,
+  "git.confirmSync": false,
+  "window.zoomLevel": 1,
+  // "editor.rulers": [80],
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "prisma.showPrismaDataPlatformNotification": false,
+  "git.detectSubmodulesLimit": 20,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "makefile.configureOnOpen": false,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "r.plot.useHttpgd": true,
+  "workbench.colorTheme": "Catppuccin Frappé",
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredLightColorTheme": "Catppuccin Latte",
+  "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
+  "typescript.tsserver.log": "off",
+  "workbench.sideBar.location": "right",
+  "git.enableSmartCommit": true,
+  "explorer.confirmDelete": false
+}
