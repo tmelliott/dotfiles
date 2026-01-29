@@ -91,7 +91,7 @@
   "workbench.preferredLightColorTheme": "Catppuccin Latte",
   "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
   "typescript.tsserver.log": "off",
-  "workbench.sideBar.location": "right",
   "git.enableSmartCommit": true,
-  "explorer.confirmDelete": false
+  "explorer.confirmDelete": false,
+  "diffEditor.ignoreTrimWhitespace": false
 }
