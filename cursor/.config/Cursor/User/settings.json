@@ -93,5 +93,9 @@
   "typescript.tsserver.log": "off",
   "git.enableSmartCommit": true,
   "explorer.confirmDelete": false,
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "claudeCode.preferredLocation": "sidebar",
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
 }

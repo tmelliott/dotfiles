@@ -4,21 +4,21 @@
   "files.associations": {
     "*.embeddedhtml": "html",
     "*.rmd": "markdown",
-    "*.Rmd": "rmarkdown"
+    "*.Rmd": "rmarkdown",
   },
   "languageTool.language": "en-NZ",
   "languageToolLinter.languageTool.language": "en-NZ",
   "liveServer.settings.donotVerifyTags": true,
   "emmet.excludeLanguages": ["markdown", "php"],
   "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
+    "javascript": "javascriptreact",
   },
   "[css]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
   },
   "[javascriptreact]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "vscode.typescript-language-features",
   },
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
@@ -29,7 +29,7 @@
   "editor.fontFamily": "'FiraCode Nerd Font', 'monospace', monospace",
   "editor.fontLigatures": true,
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -40,13 +40,13 @@
   "r.rterm.option": [
     "--no-save",
     "--no-restore",
-    "--r-binary=/usr/local/bin/R"
+    "--r-binary=/usr/local/bin/R",
   ],
   "r.alwaysUseActiveTerminal": true,
   "latex-workshop.view.pdf.viewer": "tab",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "[r]": {
-    "editor.defaultFormatter": "REditorSupport.r"
+    "editor.defaultFormatter": "REditorSupport.r",
   },
   "editor.unicodeHighlight.invisibleCharacters": false,
   "editor.unicodeHighlight.ambiguousCharacters": false,
@@ -57,7 +57,7 @@
     "plaintext": true,
     "markdown": true,
     "scminput": false,
-    "yaml": true
+    "yaml": true,
   },
   "php.suggest.basic": false,
   "php.validate.enable": false,
@@ -66,14 +66,14 @@
   "nsis.compiler.pathToMakensis": "C:\\Program Files (x86)\\NSIS\\Bin\\makensis",
   "githubPullRequests.pullBranch": "never",
   "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
+    "editor.defaultFormatter": "Prisma.prisma",
   },
   "editor.lineHeight": 1.8,
   "git.confirmSync": false,
   "window.zoomLevel": 1,
   // "editor.rulers": [80],
   "[astro]": {
-    "editor.defaultFormatter": "astro-build.astro-vscode"
+    "editor.defaultFormatter": "astro-build.astro-vscode",
   },
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "prisma.showPrismaDataPlatformNotification": false,
@@ -81,12 +81,13 @@
   "github.copilot.editor.enableAutoCompletions": true,
   "makefile.configureOnOpen": false,
   "github.copilot.nextEditSuggestions.enabled": true,
-  "workbench.iconTheme": "catppuccin-macchiato",
+  "workbench.iconTheme": "catppuccin-latte",
   "r.plot.useHttpgd": true,
   // "workbench.colorTheme": "Catppuccin Frappé",
   "window.autoDetectColorScheme": true,
   "workbench.preferredDarkColorTheme": "Catppuccin Macchiato",
   "workbench.preferredLightColorTheme": "Catppuccin Latte",
   "typescript.tsserver.log": "verbose",
-  "workbench.sideBar.location": "right"
+  "workbench.sideBar.location": "right",
+  "claudeCode.preferredLocation": "sidebar",
 }
